@@ -39,6 +39,8 @@ GEM
     activesupport (3.2.2)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    acts-as-taggable-on (2.2.2)
+      rails (~> 3.0)
     addressable (2.2.7)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
@@ -90,6 +92,7 @@ GEM
     ffi (1.0.11)
     formtastic (2.1.0)
       actionpack (~> 3.0)
+    friendly_id (4.0.1)
     gherkin (2.9.0)
       json (>= 1.4.6)
     has_scope (0.5.1)
@@ -204,6 +207,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  acts-as-taggable-on (~> 2.2.2)
   capybara
   carrierwave
   ckeditor (= 3.7.0.rc3)
@@ -211,6 +215,7 @@ DEPENDENCIES
   cucumber
   cucumber-rails
   database_cleaner
+  friendly_id (~> 4.0.1)
   jquery-rails
   launchy
   mini_magick

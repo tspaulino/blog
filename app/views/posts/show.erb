@@ -1,0 +1,5 @@
+<article>
+  <%= content_tag(:h2, @post.title) %>
+  <%= content_tag(:span, "Posted by #{@post.author.name} at #{@post.updated_at.to_s}") %>
+  <%= raw(@post.text) %>
+</article>

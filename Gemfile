@@ -25,6 +25,8 @@ gem 'activeadmin'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'ckeditor', "3.7.0.rc3"
+gem 'acts-as-taggable-on', '~> 2.2.2'
+gem 'friendly_id', "~> 4.0.1"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -41,8 +43,14 @@ gem 'ckeditor', "3.7.0.rc3"
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
+group :development, :test do
   gem 'rspec-rails', ">2.0.0"
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
 end
 
 group :cucumber do
